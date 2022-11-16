@@ -1,0 +1,274 @@
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner .bd ul li{
+    height: 450px;
+}
+.banner .hd{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -339px;
+    
+}
+.banner .hd ul li{
+    width: 220px;
+    height: 24px;
+    line-height: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;/* 鼠标手型 */
+}
+.banner .hd ul .on{
+    background: rgba(234, 26, 86, 0.7);
+}
+.main01{
+    margin: auto;
+    margin-top: 20px;
+    background: url(../img/main04.png) no-repeat left center;
+    width: 1175px;
+    padding-left: 25px;
+    
+    overflow: hidden;
+
+}
+.main01 ul li{
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    text-overflow: ellipsis;/* 显示省略号 */
+    white-space: nowrap;/* 不允许文字换行 */
+    overflow: hidden;
+}
+.main01 ul li font{
+    color: #ea1a56;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.main02{
+    width: 1200px;
+    margin: 20px auto 0px auto;
+    overflow: hidden;
+}
+.main02 .tt{
+    height: 26px;
+    border-bottom: 2px solid #ea1a56;
+}
+.main02 .tt a{
+    background: url(../img/main05.jpg) no-repeat center bottom;
+    color: #ea1a56;
+    font-size: 16px;
+    font-weight: 100;
+    display: block;
+    height: 28px;
+    float: left;
+}
+
+.main02 ul li{
+    width: 214px;
+    float: left;
+    margin: 20px 30px 0px 0px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+.main02 ul li .pic{
+    display: block;
+    /* overflow: hidden; */
+}
+.main02 ul li .pic img{
+    display: block;
+    height: 155px;
+    width: 100%;
+    transition: all 0.5s;
+    
+}
+.main02 ul li:hover{
+    box-shadow: 2px 2px 2px #e7e7e7;
+}
+.main02 ul li .pic img:hover{
+    transform: scale(1.1);
+}
+.main02 ul li h3{
+    height: 36px;
+    position: relative;
+}
+.main02 ul li h3 a{
+    font-weight: 400;
+    display: block;
+    font-size: 14px;
+    height: 36px;
+    line-height: 18px;
+    margin-top: 5px;
+    padding: 0px 10px;
+    text-overflow: ellipsis;/* 显示省略号 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    background: #ffffff;
+    position: absolute;
+    top: 0px;
+    transition: all 0.5s;
+}
+.main02 ul li h3:hover a{
+    height: 54px;
+    top: -18px;
+    color: black;
+}
+.main02 ul li span{
+    display: block;
+    position: relative;
+    z-index: 20;
+    color: #ea1a56;
+    margin-top: 10px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.main02 ul li span b{
+    font-size: 18px;
+}
+.main02 ul li span .qg{
+    background: #ea1a56;
+    float: right;
+    padding: 0px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+.main02 ul li:last-child{
+    margin-right: 0px;
+}
+.main02 ul li:last-child .pic img{
+    height: 230px;
+    transform: scale(1.0);
+}
+.main03,.main04,.main05{
+    width: 1200px;
+    margin: 20px auto 0px auto;
+    overflow: hidden;
+    padding: 0px 5px 5px 0px;
+}
+.main03 .tt,.main04 .tt,.main05 .tt{
+    border-bottom: 2px solid #dedede;
+    font-size: 12px;
+    color: #666;
+    height: 25px;
+}
+.main03 .tt h1,.main04 .tt h1,.main05 .tt h1{
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    margin-right: 10px;
+}
+.main03 .tt h1 img,.main04 .tt h1 img,.main05 .tt h1 img{
+    margin: 7px 5px 0px 0px;
+    display: block;
+    float: left;
+    transform: rotate(90deg);
+}
+.main03 .tt ul,.main04 .tt ul,.main05 .tt ul{
+    float: right;
+}
+.main03 .tt ul li{
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+    height: 25px;
+}
+.main04 .tt ul li,.main05 .tt ul li{
+    float: left;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+    height: 25px;
+    border-bottom: 2px solid #ea1a56;
+    color: #ea1a56;
+}
+.main03 .tt ul .on{
+    border-bottom: 2px solid #ea1a56;
+    color: #ea1a56;
+}
+.main03 .ad,.main04 .ad,.main05 .ad{
+    display: block;
+    float: left;
+    width: 290px;
+    overflow: hidden;
+}
+.main03 .ad img,.main04 .ad img,.main05 .ad img{
+    display: block;
+    width: 100%;
+    height: 560px;
+}
+.main03 .list,.main04 .list,.main05 .list{
+    width: 910px;
+    float: left;
+}
+.main03 .list ul{
+
+}
+.main03 .list ul li,.main04 .list ul li,.main05 .list ul li{
+    float: left;
+    width: 281px;
+    margin: 20px 0px 0px 22px;
+    overflow: hidden;
+}
+.main03 .list ul li .pic,.main04 .list ul li .pic,.main05 .list ul li .pic{
+    display: block;
+    overflow: hidden;
+}
+.main03 .list ul li .pic img,.main04 .list ul li .pic img,.main05 .list ul li .pic img{
+    display: block;
+    width: 100%;
+    height: 185px;
+    transition: all 0.5s;
+}
+.main03 .list ul li:hover .pic img,.main04 .list ul li:hover .pic img,.main05 .list ul li:hover .pic img{
+    transform: scale(1.1);
+}
+.main03 .list ul li h2,.main04 .list ul li h2,.main05 .list ul li h2{
+    font-size: 14px;
+    font-weight: 400;
+    height: 36px;
+    margin:5px 10px 0px 10px;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.main03 .list ul li h2:hover,.main04 .list ul li h2:hover,.main05 .list ul li h2:hover{
+    color: #ea1a56;
+}
+.main03 .list ul li span,.main04 .list ul li span,.main05 .list ul li span{
+    display: block;
+    margin: 5px 10px;
+    overflow: hidden;
+}
+.main03 .list ul li span font,.main04 .list ul li span font,.main05 .list ul li span font{
+    float: right;
+    color: #ea1a56;
+}
+.main03 .list ul li span font b,.main04 .list ul li span font b,.main05 .list ul li span font b{
+    font-size: 18px;
+}
+.main03 .list ul li:hover,.main04 .list ul li:hover,.main05 .list ul li:hover{
+    box-shadow: 0px 0px 5px #dedede;
+}
+.gg,.gg1{
+    width: 1200px;
+    margin: 20px auto 0px auto;
+    overflow: hidden;
+}
+.gg img,.gg1 img{
+    display: block;
+    width: 100%;
+}
