@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+body{
+    font-size: 14px;
+    line-height: 22px;
+    color: #333;
+    background: linear-gradient(to bottom, #1f8daf 0%, #084793 100%);
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #e5004f;
+}

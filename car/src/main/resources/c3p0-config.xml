@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <default-config>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/db2?characterEncoding=UTF-8</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <!--初始化时创建的连接数，应在minPoolSize与maxPoolSize之间取值。默认为3； -->
+        <property name="initialPoolSize">30</property>
+        <!-- 最大空闲时间，超过空闲时间的连接将被丢弃。为0或负数则永不丢弃。默认为0； -->
+        <property name="maxIdleTime">30</property>
+        <!--连接池中保留的最大连接数。默认为15； -->
+        <property name="maxPoolSize">100</property>
+        <!-- 连接池中保留的最小连接数。默认为15 -->
+        <property name="minPoolSize">15</property>
+    </default-config>
+</c3p0-config>

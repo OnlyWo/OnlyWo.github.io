@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车辆信息</title>
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+    <script src="/jquery/jquery.js"></script>
+    <script>
+<!--        发起ajax请求-->
+        $.ajax({
+            type:'get',
+            url:'/QueryCarServlet',
+            success:function (s){
+                let html = "<tr><th>序号</th><th>汽车名称</th><th>汽车备注</th><th>品牌</th><th>类型</th><th>价格</th><th>是否可租</th><th>是否上架</th></tr>";
+                $.each(s,function(index,obj){
+                    html+="<tr><td>"+(index+1)+"</td><td>"+obj.car_name+"</td><td>"+obj.remark+"</td><td>"+obj.brand+"</td><td>"+obj.type+"</td><td>"+obj.price+"</td><td>"+(obj.rentable==0?"不可租":"可租")+"</td><td>"+obj.state+"</td><tr>"
+                    /*html+="<tr>";
+                    html+="<td>"+(index+1)+"</td>";
+                    html+="<td>"+obj.car_name+"</td>";
+                    html+="<td>"+obj.remark+"</td>";
+                    html+="<td>"+obj.brand+"</td>";
+                    html+="<td>"+obj.type+"</td>";
+                    html+="<td>"+obj.price+"</td>";
+                    html+="<td>"+(obj.rentable==0?"不可租":"可租")+"</td>";
+                    html+="<td>"+obj.state+"</td>";
+                    html+="</tr>";*/
+                })
+                let tb = document.getElementById("tb");
+                tb.innerHTML = html;
+            }
+        })
+    </script>
+</head>
+<body>
+<table id="tb">
+    <tr>
+        <th>序号</th>
+        <th>汽车名称</th>
+        <th>汽车备注</th>
+        <th>品牌</th>
+        <th>类型</th>
+        <th>价格</th>
+        <th>是否可租</th>
+        <th>是否上架</th>
+    </tr>
+    <!--<tr>
+        <td>序号</td>
+        <td>汽车名称</td>
+        <td>汽车备注</td>
+        <td>品牌</td>
+        <td>类型</td>
+        <td>价格</td>
+        <td>是否可租</td>
+        <td>是否上架</td>
+    </tr>-->
+</table>
+</body>
+</html>

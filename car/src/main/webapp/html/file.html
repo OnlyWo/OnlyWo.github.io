@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+</head>
+<body style="background: url('../images/img_1.png') no-repeat right center">
+<div style="margin-left: 200px;margin-top: 80px">
+    <h1>修改汽车图片</h1>
+<form action="/FileUploadServlet" method="post" enctype="multipart/form-data">
+    请输入需要修改的车id：<br>
+    <input type="text" name="id">
+    <br>
+    <br>
+    请选择文件：
+    <br>
+    <input type="file" name="myfile" multiple="multiple">
+    <br>
+    <br>
+    <input type="submit" value="提交"/>
+</form>
+</div>
+</body>
+</html>

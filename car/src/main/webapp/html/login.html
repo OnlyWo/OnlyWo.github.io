@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/core.css" rel="stylesheet">
+    <link href="/css/user.css" rel="stylesheet">
+    <title>登录</title>
+    <link href='/css/core.css'  rel='stylesheet' />
+    <link href='/css/iconfont.css'  rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="/css/public.css">
+</head>
+<body>
+    <div class="publicTopW">
+        <div class="common_head">
+            <div class="phone_r">
+                <h2><i class="iconfont icon-lianxiwomen"></i> 19985144372</h2>
+                <h3>09:00~22:00</h3></div>
+            <a href="#"><img src="/images/logo.png" class="logo" /></a>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+
+    <form action="/LoginServlet" method="post">
+        <div class="main" style="margin-top: 20px">
+            <div class="main_logo">
+                <div class="main_logo_top">
+                    <div class="li active blue">用户登录</div>
+
+                </div>
+
+                <div class="main_logo_m">
+                    <div class="main_logo_input">
+                        <div class="ul">
+                            <div class="main_logo_input_1">
+                                <i class="iconfont icon-zhanghao"></i>
+                                <input name="username" value="" type="text" placeholder="请输入用户名">
+                            </div>
+                            <div class="main_logo_input_1">
+                                <i class="iconfont icon-mima"></i>
+                                <input name="password" value="" type="password" placeholder="请输入密码">
+                                <input name="role" value="普通用户" type="hidden">
+                            </div>
+                            <div class="login" id="login"><input type="submit" value="提交" style="background-color: red;padding: 11px 98px" /></div>
+                            <p class="login_tips"><span id="tip"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_logo_r">
+                    <p>管理员入口</p>
+                    <a href="/html/root.html" class="register">进入-&gt;</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- footer start -->
+    <div class="footer">
+        <a href="#">首页</a>
+        <a href="#">公司简介</a>
+        <a href="#">产品展示</a>
+        <a href="#">新闻资讯</a>
+        <a href="#">联系我们</a>
+        <br>
+        华信智原科技有限公司 版权所有 &copy; Copyright 2022 备案号：<a style="color: #9ba3a8;" href="#" target="_blank">黔ICP备2022003204号-1</a><br />
+        地址：贵州省花溪区小屯路（小屯大街461、463号） 咨询热线：0335-3925555
+    </div>
+    <!-- footer end -->
+
+</body>
+</html>

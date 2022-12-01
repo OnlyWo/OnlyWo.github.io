@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除用户</title>
+    <link rel="stylesheet" type="text/css" href="/css/css.css">
+</head>
+<body style="background: url('../images/img_1.png') no-repeat right center">
+<div style="margin-left: 200px;margin-top: 200px">
+<h1>删除用户</h1>
+    <br>
+<form action="/UserDeleteServlet" method="post">
+    <table>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" name="username" value=""/></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="password" value=""/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="提交"/></td>
+        </tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

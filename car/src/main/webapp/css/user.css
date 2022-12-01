@@ -1,0 +1,280 @@
+.top {
+    width: 1160px;
+    margin: auto;
+    height: 126px
+}
+
+.top img.right {
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px
+}
+
+.top img.logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 44px
+}
+
+.foot {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center
+}
+
+.foot p {
+    color: #999;
+    font-size: 12px;
+    line-height: 17px
+}
+
+.foot a {
+    font-size: 14px;
+    color: #666;
+    padding: 0 3px;
+    line-height: 30px
+}
+
+.foot a:hover {
+    color: #fb284b
+}
+
+.main {
+    position: relative;
+    height: 548px;
+    background: url(//r.uzaicdn.com/content/store/images/user/main.jpg) no-repeat center
+}
+
+.main_logo {
+    width: 460px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: 45px;
+    top: 128px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    padding: 25px 32px;
+    padding-right: 0;
+    padding-bottom: 10px
+}
+
+.main_logo_top {
+    overflow: hidden
+}
+
+.main_logo_top .li {
+    font-size: 14px;
+    color: #000;
+    float: left;
+    line-height: 24px;
+    cursor: pointer
+}
+
+.main_logo_top .li.active {
+    font-size: 18px
+}
+
+.main_logo_top .line {
+    float: left;
+    margin: 0 20px;
+    line-height: 24px
+}
+
+.main_logo_top .li.blue {
+    padding-bottom: 10px;
+    background: url(//r.uzaicdn.com/content/store/images/user/nav.png) no-repeat bottom center
+}
+
+.main_logo_m {
+    padding-top: 10px
+}
+
+.main_logo_input {
+    float: left;
+    width: 250px;
+    padding-right: 34px
+}
+
+.main_logo_input_1 {
+    border: 1px solid #e5e5e5;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    position: relative
+}
+
+.main_logo_input_1 i {
+    color: #d9d9d9;
+    font-size: 18px;
+    float: left;
+    margin-right: 5px
+}
+
+.main_logo_input_1 input {
+    width: 200px;
+    font-size: 12px;
+    line-height: 18px
+}
+
+.main_logo_input_1 input.phcolor {
+    color: #666
+}
+
+.main_logo_input_1yzm .main_logo_input_1 {
+    float: left
+}
+
+.main_logo_input_1yzm .main_logo_input_1 input {
+    width: 80px
+}
+
+.main_logo_input_1yzm .obtain {
+    float: left;
+    margin-top: 11px;
+    margin-left: 10px;
+    width: 115px;
+    line-height: 30px;
+    color: #666;
+    font-size: 12px;
+    background: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px
+}
+
+.main_logo_input .forget {
+    margin-top: 10px
+}
+
+.main_logo_input .forget a {
+    color: #666;
+    font-size: 12px;
+    float: right
+}
+
+.main_logo_input .forget a:hover {
+    color: #009afc
+}
+
+.main_logo_input .forget .remember {
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 16px
+}
+
+.main_logo_input .forget .remember i {
+    margin-right: 5px;
+    font-size: 12px
+}
+
+.main_logo_input .forget .remember i.icon-checkbank {
+    color: #f74a66;
+    font-size: 12px !important;
+    margin-top: 2px
+}
+
+.main_logo_input .login {
+    color: #fff;
+    line-height: 36px;
+    font-size: 14px;
+    text-align: center;
+    background: #fb284b;
+    margin-top: 10px;
+    border-radius: 18px;
+    cursor: pointer
+}
+
+.main_logo_input .login:hover {
+    background: #e11541
+}
+
+.main_logo_r {
+    float: left;
+    width: 120px;
+    padding-left: 30px;
+    padding-top: 48px;
+    border-left: 1px solid #e5e5e5;
+    padding-bottom: 14px
+}
+
+.main_logo_r p {
+    font-size: 12px;
+    color: #666
+}
+
+.main_logo_r a.register {
+    font-size: 14px;
+    color: #2183d8;
+    margin-top: 10px;
+    display: block
+}
+
+.main_logo_r a.register:hover {
+    color: #fb284b
+}
+
+.main_logo_r p.mart60 {
+    margin-top: 60px
+}
+
+.login_icon {
+    margin-top: 12px
+}
+
+.login_icon i {
+    float: left;
+    margin-right: 5px;
+    font-size: 24px
+}
+
+.login_icon i.icon-weibo {
+    color: #fb7653
+}
+
+.login_icon i:hover {
+    color: #f5653f
+}
+
+.login_icon i.icon-QQ {
+    color: #52b1f1
+}
+
+.login_icon i.icon-weixin1 {
+    color: #6bbf61
+}
+
+.icon-yanzhengma {
+    font-size: 15px !important;
+    margin-top: 2px
+}
+
+.login_tips {
+    text-align: center;
+    height: 18px;
+    padding-top: 8px
+}
+
+.login_tips span {
+    color: #fb284b;
+    font-size: 12px;
+    text-align: center
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #d9d9d9
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #d9d9d9
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #d9d9d9
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #d9d9d9
+}

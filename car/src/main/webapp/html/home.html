@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>汽车</title>
+    <link href='/css/core.css'  rel='stylesheet' />
+    <link href='/css/iconfont.css'  rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="/css/public.css">
+    <script src="/jquery/jquery.js"></script>
+    <script src="/jquery/cars.js"></script>
+</head>
+<body>
+<div class="publicTopW">
+    <div class="common_top">
+        <div class="top_m">
+            <div class="top_m_r">
+                <a href="#" target="_blank"><i class="iconfont icon-vip"></i> 会员俱乐部</a>
+                <a href="#" target="_blank" class="paddl26">我的订单</a>
+                <a href="#" target="_blank" class="paddl26 red">营业网点</a>
+                <a href="#" target="_blank" class="paddl26 ">招募合伙人</a>
+            </div>
+            <!--            完成-->
+            <div class="top_m_l">
+                <iframe width="500" scrolling="no" height="30" frameborder="0" allowtransparency="true" src="https://i.tianqi.com?c=code&id=11&icon=1&py=guiyang1&site=16"></iframe>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+
+    <div class="common_head">
+        <div class="phone_r">
+            <h2><i class="iconfont icon-lianxiwomen"></i> 19985144372</h2>
+            <h3>09:00~22:00</h3></div>
+        <a href="#"><img src="/images/logo.png" class="logo" /></a>
+    </div>
+    <div class="common_head">
+        <form action="/UserServlet" method="post">
+            <input type="submit" name="action" value="查询汽车名" style="width: 100px;height: 30px;border-radius: 20px;background-color: #f7f7f7;margin-left: 50px"/>
+            <input type="submit" name="action" value="查询汽车类别" style="width: 100px;height: 30px;border-radius: 20px;background-color: #f7f7f7;"/>
+            <input type="submit" name="action" value="按价格查询" style="width: 100px;height: 30px;border-radius: 20px;background-color: #f7f7f7;"/>
+        </form>
+    </div>
+</div>
+
+<div style="clear: both"></div>
+
+<div class="header">
+    <div class="nav">
+        <ul>
+            <li><a href="javascript:query('全部')">全部汽车</a></li>
+            <li><a href="javascript:query('SUV')">SUV</a></li>
+            <li><a href="javascript:query('轿车')">轿车</a></li>
+            <li><a href="javascript:query('MPV')">MPV</a></li>
+            <li><a href="javascript:query('跑车')">跑车</a></li>
+            <li><a href="javascript:query('面包车')">面包车</a></li>
+            <li><a href="javascript:query('皮卡')">皮卡</a></li>
+            <li><a href="javascript:query('紧凑型')">紧凑型</a></li>
+            <li><a href="javascript:query('豪华型')">豪华型</a></li>
+        </ul>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<!--     main02 start-->
+<div class="main02">
+    <div class="rt">
+        <ul class="carlist">
+
+        </ul>
+    </div>
+</div>
+<!--     main02 end-->
+<div style="clear: both"></div>
+<!-- footer start -->
+<div class="footer">
+    <a href="#">首页</a>
+    <a href="#">公司简介</a>
+    <a href="#">产品展示</a>
+    <a href="#">新闻资讯</a>
+    <a href="#">联系我们</a>
+    <br>
+    华信智原科技有限公司 版权所有 &copy; Copyright 2022 备案号：<a style="color: #9ba3a8;" href="#" target="_blank">黔ICP备2022003204号-1</a><br />
+    地址：贵州省花溪区小屯路（小屯大街461、463号） 咨询热线：0335-3925555
+</div>
+<!-- footer end -->
+</body>
+<script>
+    // 原生ajax 类型分类
+    let query = function (type){
+        $.ajax({
+            type:'get',
+            url:'/JsonServlet',
+            data:'type='+type,
+            success:function (rs){
+                let html="";
+                $.each(rs,function (index,obj){
+                    html+="<li>";
+                    html+="<a href='/JSPServlet?id="+obj.id+"'><img src="+obj.carUrl+" width='450px' height='450px'>";
+                    html+="</a>";
+                    html+="<a href='#' style='margin-top: 10px'><h1>汽车名称："+obj.car_name+"  汽车价格："+obj.price+" 类型："+obj.type+"</h1></a>";
+                    html+="</li>";
+                });
+                $(".carlist").html(html);
+            }
+        })
+    }
+    query("全部");
+
+    // ajax get
+    /*let query = function (car_name){
+        $.get('/JsonGetServlet',{type:car_name},function (rs) {
+            show(rs.data);
+        })
+    }*/
+    // query("全部");
+
+    /*// ajax post
+    let query = function (type){
+        $.post('/JsonPostServlet',{type:type},function (rs){
+            let json = JSON.parse(rs);
+            show(json.data);
+        });
+    }
+    query("全部");*/
+
+    /*// ajax post 2
+    let query = function (type){
+        $.post('/JsonPostServlet',{type:type},function (rs){
+            show(rs.data);
+        },'json');
+    }
+    query("全部");*/
+
+    /*// ajax post 3
+    let query = function (type){
+        $.getJSON('/JsonPostServlet',{type:type},function (rs){
+            show(rs.data);
+        });
+    }
+    query("全部");*/
+
+
+</script>
+</html>

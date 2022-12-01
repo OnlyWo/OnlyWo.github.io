@@ -1,0 +1,30 @@
+*{
+	margin:0px;
+	padding: 0px;
+	list-style:none;/*去除列表样式*/
+	
+}
+.banner{
+	position: relative;/*相对定位*/
+	overflow: hidden;/*自由展开,超出隐藏*/
+}
+.banner .tu ul li img{
+	display: block;/*转换为块元素*/
+	width: 100%;
+}
+.banner .hd{
+	position: absolute;/*绝对定位*/
+	bottom: 5px;/*离相对定位盒子底部距离*/
+	width: 100%;
+	text-align: center;
+}
+.banner .hd ul li{
+	width: 60px;
+	height: 5px;
+	background: #009EFF;
+	display: inline-block;/*转换为行内块元素*/
+	cursor: pointer;/*鼠标手型*/
+}
+.banner .hd ul li:hover{
+	background: #fff;
+}
